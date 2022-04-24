@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    width: 90vw;
+    height: 85vh;
+    margin: auto;
+}
+
+.navbar {
+
+    height: 10vh;
+    background-color: blueviolet;
+    margin-bottom: 1%;
+}
+
+.side-bar {
+    display: block;
+    max-width: 30%;
+    background-color: aqua;
+    border-style: solid;
+    padding: 5%;
+}
+
+.side-bar h1 {
+    margin-left: 5%;
+}
+
+.side-bar h2 {
+    margin-left:10%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    background-color: yellow;
+    padding: 5%;
+    overflow-y: scroll;
+}
+
+.content-item {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 5%;
+}
