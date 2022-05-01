@@ -8,13 +8,39 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="assets/css/home-style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div class="navbar">
 
-        <h1>Yoeri Pearcey van der Beek</h1>
-        <h2>About Me</h2>
+        <div class="nav-title"> 
+            <h2>Yoeri Pearcey van der Beek</h2>
+            <h4>software developer & programmer</h4>
+        </div>
+        
+        <h3 style="margin-left: auto; margin-right: 2%;">About Me</h3>
+
+        <div class="burger-menu">
+            
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-3x"></i>
+            </a>
+            
+            <div id="myLinks">
+                <a href="#news">Home</a>
+                <a href="#about">SYNCH/RUSH</a>
+                <a href="">Dome of the Rock</a>
+                <a href="">FONS - Gardens</a>
+                <a href="">Cupric</a>
+                <a href="">OCDoom</a>
+                <a href="">Base Jam</a>
+                <a href="">Virus Simulation</a>
+            </div>
+            
+            
+        </div>
     </div>
 
     <div class="container">
@@ -116,6 +142,18 @@
 
         </div>
     </div>
+
+    <script>
+        
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </body>
 
 </html>

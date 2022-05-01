@@ -4,7 +4,7 @@ body {
     
 }
 
-p, h1, h2, h3, h4, h5 {
+p, h1, h2, h3, h4, h5, li, a {
     color: antiquewhite;
     font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -17,16 +17,84 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .navbar {
-
+    position: relative;
+    z-index: 1;
+    background-color: darkslategray;
+    top: 0;
+    width: 98vw;
     height: 10vh;
     display: flex;
-    padding-top: 1%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+    margin-bottom: 5%;
+    box-shadow: 0 2px grey;
 }
 
-.navbar h1 {
+.navbar h3 {
+    margin-top: 2%;
+}
+
+
+
+.nav-title{
+    margin-top: 0;
     margin-left: 5%;
+    display: block;
+    width: 30%;
+} 
+
+.burger-menu {
+    display: block;
+    position: relative;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    width: 50px;
+    height: 50px;
     
-    margin-right: 65%;
+    padding: auto;
+}
+
+#myLinks {
+    transition: 1s;
+    
+    display: none;
+    position: relative;
+    background-color: darkslategray;
+    border-style: solid;
+    /* top: 100%; */
+    right: 12vw;
+    width: 15vw;
+    /* height: 20vh; */
+}
+
+#myLinks > a:hover {
+    transition: 0.5s;
+    background-color: grey;
+}
+
+.burger-menu a {
+    
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+
+.burger-menu > a.burger-icon {
+    /* background: black; */
+    text-decoration: none;
+ 
+  
+  color: black;
+  right: 0;
+  top: 0;
+}
+
+.burger-menu > a.burger-icon > .fa .fa-bars {
+    width: 100%;
+    height: 100%;
 }
 
 

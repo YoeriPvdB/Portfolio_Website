@@ -2,7 +2,7 @@ body {
     background-color:darkslategray;
 }
 
-p, h1, h2, h3, h4, h5, li {
+p, h1, h2, h3, h4, h5, li, a {
     color: antiquewhite;
     font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -15,40 +15,153 @@ li > span {
     color:darkgray;
 }
 .navbar {
-
+    position: sticky;
+    background-color: darkslategray;
+    top: 0;
+    width: 98vw;
     height: 10vh;
     display: flex;
-    padding-top: 1%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
     margin-bottom: 5%;
+    box-shadow: 0 2px grey;
 }
 
-.navbar h1 {
-    margin-left: 5%;
-    
-    margin-right: 65%;
+.navbar h3 {
+    margin-top: 2%;
 }
+
+
+
+.nav-title{
+    margin-top: 0;
+    margin-left: 5%;
+    display: block;
+    width: 30%;
+} 
+
+.burger-menu {
+    display: block;
+    position: relative;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    width: 50px;
+    height: 50px;
+    
+    padding: auto;
+}
+
+#myLinks {
+    transition: 1s;
+    display: none;
+    position: relative;
+    background-color: darkslategray;
+    border-style: solid;
+    /* top: 100%; */
+    right: 12vw;
+    width: 15vw;
+    /* height: 20vh; */
+}
+
+#myLinks > a:hover {
+    transition: 0.5s;
+    background-color: grey;
+}
+
+.burger-menu a {
+    
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+
+
+.burger-menu > a.burger-icon {
+    /* background: black; */
+    text-decoration: none;
+ 
+  
+  color: black;
+  right: 0;
+  top: 0;
+}
+
+.burger-menu > a.burger-icon > .fa .fa-bars {
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .banner {
-    width: 80vw;
+    width:60vw;
+    height: 20vh;
     margin: auto;
     margin-bottom: 5%;
+    /* border-style: solid;
+    border-color: grey; */
+    box-shadow: 10px 10px grey;
 }
 
 .banner > img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+.project-info {
+    width: 60vw;
+    max-height: 50vh;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.project-info > ul {
+    display: flex;
+}
+
+.project-info > ul > li {
+    margin-right: 5%;
+}
+
+
+
+.project-info > button {
+    width: 10%;
+    height: 30px;
+    margin-top: 5%;
+    margin-left: 45%;
+    border-style: none;
+    color: white;
+    background-color: black;
+    box-shadow: 4px 5px grey;
+    cursor: pointer;
+}
+
+
+
+.project-info > button:hover {
+    transition: 0.5s;
+    background-color: grey;
+    color: black;
+    box-shadow: 4px 5px black;
+}
 .container {
     width: 60vw;
+    height: auto;
     padding: 2%;
-    border-right: solid antiquewhite;
-    border-left: solid antiquewhite;
+    padding-top: 0;
+    border-right: solid grey;
+    border-left: solid grey;
     
     margin: auto;
 }
 
 .text-block {
-    margin-bottom: 5%;
+    
+    margin-top: 5%;
 }
 
 .text-block > p {
@@ -57,12 +170,20 @@ li > span {
 }
 
 .image-block {
-    max-width: 80%;
-    margin: auto;
+    margin-top: 5%;
+    max-width: 60%;
+    /* height: 80%; */
+    /* margin: auto; */
+    
 }
 
 .image-block  > img {
     width: 100%;
     height: 100%;
+    box-shadow: 7px 7px grey;
 }
 
+
+@media screen {
+    
+}
