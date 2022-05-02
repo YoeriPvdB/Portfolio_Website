@@ -110,7 +110,8 @@ li > span {
     /* border-style: solid;
     border-color: grey; */
     border-style: solid;
-    box-shadow: 10px 10px grey;
+    border-color: grey;
+    box-shadow: 10px 10px black;
 }
 
 .banner > img {
@@ -189,7 +190,8 @@ li > span {
     width: 100%;
     height: 100%;
     border-style: solid;
-    box-shadow: 7px 7px grey;
+    border-color: grey;
+    box-shadow: 7px 7px black;
 }
 
 #mobile-displays {

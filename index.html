@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="HomeSetup()">
     <div class="navbar">
 
         <div class="nav-title"> 
@@ -20,7 +20,7 @@
             <h4>software developer & programmer</h4>
         </div>
         
-        <h3 style="margin-left: auto; margin-right: 2%;">About Me</h3>
+        <h3 onclick="location.href='assets/pages/about.html'">About Me</h3>
 
         <div class="burger-menu">
             
@@ -30,13 +30,14 @@
             
             <div id="myLinks">
                 <a href="index.html">Home</a>
+                <a href="assets/pages/about.html">About me</a>
                 <a href="assets/pages/synchrush.html">SYNCH/RUSH</a>
                 <a href="assets/pages/dome.html">Dome of the Rock</a>
-                <a href="">FONS - Gardens</a>
-                <a href="">Cupric</a>
-                <a href="">OCDoom</a>
-                <a href="">Base Jam</a>
-                <a href="">Virus Simulation</a>
+                <a href="assets/pages/fons.html">FONS - Gardens</a>
+                <a href="assets/pages/cupric.html">Cupric</a>
+                <a href="assets/pages/ocdoom.html">OCDoom</a>
+                <a href="assets/pages/basejam.html">Base Jam</a>
+                <a href="assets/pages/sim.html">Virus Simulation</a>
             </div>
             
             
@@ -47,28 +48,31 @@
 
         <div class="side-bar">
 
+            <h4 onclick="ShowAll()">All</h4>
+
             <h1>Languages</h1>
 
-            <h2>C#</h2>
-            <h2>Javascript</h2>
-            <h2>Java</h2>
-            <h2>HTML</h2>
-            <h2>CSS</h2>
+            <h4 id="C#" onclick="CheckItems(id)">C#</h4>
+            <h4 id="Javascript" onclick="CheckItems(id)">Javascript</h4>
+            <h4 id="Java" onclick="CheckItems(id)">Java</h4>
+            <h4 id="HTML" onclick="CheckItems(id)">HTML</h4>
+            <h4 id="CSS" onclick="CheckItems(id)">CSS</h4>
 
 
             <h1>Software</h1>
 
-            <h2>Unity</h2>
-            <h2>Node JS</h2>
-            <h2>MYSQL</h2>
-            <h2>Game Maker Studio</h2>
-            <h2>Processing</h2>
+            <h4 id="Unity Engine" onclick="CheckItems(id)">Unity Engine</h4>
+            <h4 id="Node.js" onclick="CheckItems(id)">Node.js</h4>
+            <h4 id="MYSQL" onclick="CheckItems(id)">MYSQL</h4>
+            <h4 id="Game Maker Studio" onclick="CheckItems(id)">Game Maker Studio</h4>
+            <h4 id="Processing" onclick="CheckItems(id)">Processing</h4>
+            
 
         </div>
 
-        <div class="content">
+        <div class="content" id="homeContent">
 
-            <div class="content-item">
+            <div class="content-item" id="0" onmouseover="CheckTags(id)" onmouseleave="Reset()">
                 <img src="assets/images/synchrush.png" alt="synchrush image">
                 <div class="item-info" onclick="location.href='assets/pages/synchrush.html'">
                     <h2>SYNCH/RUSH</h2>
@@ -79,7 +83,7 @@
 
             </div>
 
-            <div class="content-item">
+            <div class="content-item" id="1" onmouseover="CheckTags(id)" onmouseleave="Reset()">
                 <img src="assets/images/dome1.jpg" alt="">
                 <div class="item-info" onclick="location.href='assets/pages/dome.html'">
                     <h2>Dome of the Rock</h2>
@@ -88,55 +92,58 @@
                 </div>
             </div>
 
-            <div class="content-item">
+            <div class="content-item" id="2" onmouseover="CheckTags(id)" onmouseleave="Reset()">
                 <img src="assets/images/fons-icon.jpg" alt="">
-                <div class="item-info">
+                <div class="item-info" onclick="location.href='assets/pages/fons.html'">
                     <h2>FONS</h2>
                     <h3>2022</h3>
                     <h4>Garden themed image sharing site</h4>
                 </div>
             </div>
 
-            <div class="content-item">
-                <div class="item-info">
+            <div class="content-item" id="3" onmouseover="CheckTags(id)" onmouseleave="Reset()">
+                <img src="assets/images/sim1.jpg" alt="">
+                <div class="item-info" onclick="location.href='assets/pages/sim.html'">
                     <h2>Virus Simulation</h2>
                     <h3>2022</h3>
-                    <h4>An interactive simulation of a virus </h4>
+                    <h4>Interactive virus simulation  </h4>
                 </div>
             </div>
 
-            <div class="content-item">
+            <div class="content-item" id="4" onmouseover="CheckTags(id)" onmouseleave="Reset()">
 
                 <img src="assets/images/cupric-icon.png" alt="">
-                <div class="item-info">
+                <div class="item-info" onclick="location.href='assets/pages/cupric.html'" onmouseleave="Reset()">
                     <h2>Cupric</h2>
                     <h3>2019</h3>
                     <h4>2D action game</h4>
                 </div>
             </div>
-            <div class="content-item">
+            <div class="content-item" id="5" onmouseover="CheckTags(id)" onmouseleave="Reset()">
                 <img src="assets/images/OCDoom-icon.png" alt="">
-                <div class="item-info">
+                <div class="item-info" onclick="location.href='assets/pages/ocdoom.html'">
                     <h2>OCDoom</h2>
                     <h3>2018</h3>
                     <h4>First Person Hygiene Shooter</h4>
                 </div>
             </div>
 
-            <div class="content-item">
+            <div class="content-item" id="6" onmouseover="CheckTags(id)" onmouseleave="Reset()">
                 <img src="assets/images/basejam-icon.png" alt="">
-                <div class="item-info">
+                <div class="item-info" onclick="location.href='assets/pages/basejam.html'">
                     <h2>Base Jam</h2>
                     <h3>2017</h3>
                     <h4>Space Invaders with a Baseball twist</h4>
                 </div>
             </div>
 
-            <div class="content-item">
-                <div class="item-info">
+            <div class="content-item" id="7" onmouseover="CheckTags(id)" onmouseleave="Reset()">
+                
+                <div class="item-info" onclick="window.open('https://github.com/YoeriPvdB/YoeriPvdB_Portfolio', '_blank')">
                     <h2>This Portolio Site</h2>
                     <h4>2022</h4>
                 </div>
+                <img src="assets/images/portfolio.jpg" alt="">
             </div>
 
 

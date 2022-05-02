@@ -12,7 +12,7 @@ p, h1, h2, h3, h4, h5, li, a {
 .container {
     display: flex;
     width: 90vw;
-    height: 80vh;
+    height: 70vh;
     margin: auto;
 }
 
@@ -32,8 +32,11 @@ p, h1, h2, h3, h4, h5, li, a {
 
 .navbar h3 {
     margin-top: 2%;
-}
+    margin-left: auto;
+    margin-right: 2%;
+    cursor: pointer;
 
+}
 
 
 .nav-title{
@@ -102,7 +105,7 @@ p, h1, h2, h3, h4, h5, li, a {
 .side-bar {
     display: block;
     max-width: 30%;
-    
+    /* background-color: black; */
     padding: 5%;
     padding-top: 0;
     margin-top: 3%;
@@ -110,12 +113,18 @@ p, h1, h2, h3, h4, h5, li, a {
     overflow-y: hidden;
 }
 
-.side-bar h1 {
+.side-bar > h1 {
     margin-left: 5%;
+    margin-top: 20%;
 }
 
-.side-bar h2 {
-    margin-left:10%;
+.side-bar h4 {
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+.side-bar h4:hover {
+    color: cadetblue;
 }
 
 .content {
@@ -140,10 +149,11 @@ p, h1, h2, h3, h4, h5, li, a {
     height: 300px;
     
     border-style: solid;
-    
+    border-color: grey;
     margin-right: 5%;
     margin-bottom: 5%;
     cursor:pointer;
+    box-shadow: 5px 5px black;
 }
 
 .content-item > img {
@@ -174,22 +184,22 @@ p, h1, h2, h3, h4, h5, li, a {
 
 
 /* width */
-::-webkit-scrollbar {
+    #homeContent::-webkit-scrollbar {
     width: 10px;
   }
   
   /* Track */
-  ::-webkit-scrollbar-track {
+   #homeContent::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+ #homeContent::-webkit-scrollbar-thumb {
     background: #888;
   }
   
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  #homeContent::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
 
@@ -199,3 +209,4 @@ p, h1, h2, h3, h4, h5, li, a {
     opacity: 1;
     background: rgba(0, 0, 0, 0.5);
 }
+
