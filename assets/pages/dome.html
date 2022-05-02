@@ -20,7 +20,7 @@
             <h4>software developer & programmer</h4>
         </div>
         
-        <h3 style="margin-left: auto; margin-right: 2%;">About Me</h3>
+        <h3 onclick="location.href='../pages/about.html'">About Me</h3>
 
         <div class="burger-menu">
             
@@ -29,24 +29,29 @@
             </a>
             
             <div id="myLinks">
-                <a href="#news">Home</a>
-                <a href="#about">SYNCH/RUSH</a>
-                <a href="">Dome of the Rock</a>
-                <a href="">FONS - Gardens</a>
-                <a href="">Cupric</a>
-                <a href="">OCDoom</a>
-                <a href="">Base Jam</a>
-                <a href="">Virus Simulation</a>
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">About Me</a>
+                <a href="../pages/synchrush.html">SYNCH/RUSH</a>
+                <a href="../pages/dome.html">Dome of the Rock</a>
+                <a href="../pages/fons.html">FONS - Gardens</a>
+                <a href="../pages/cupric.html">Cupric</a>
+                <a href="../pages/ocdoom.html">OCDoom</a>
+                <a href="../pages/basejam.html">Base Jam</a>
+                <a href="../pages/sim.html">Virus Simulation</a>
             </div>
             
             
         </div>
     </div>
+
+    
+
     <div class="banner">
         <img src="../images/homepage06.jpg" alt="">
     </div>
 
     <div class="project-info">
+        <h1 class="page-title">Dome of the Rock</h1>
         <ul>
 
             <li>
@@ -56,7 +61,7 @@
                     <li>CSS</li>
                     <li>Javascript</li>
                     <li>Bootstrap</li>
-                    <li>Github</li>
+                    <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/Dome-of-the-Rock', '_blank')">Github</li>
 
                 </ul>
             </li>
@@ -103,6 +108,7 @@
 
             <p>I placed a lot of effort around creating scalable and easily adaptable code. This was prioritised as team
                 members in charge of adding content would be able to do so independently and easily.</p>
+            
         </div>
 
         <div class="image-block">
@@ -110,12 +116,25 @@
         </div>
 
         <div class="text-block">
+            <p>The website was designed with accessibility in mind, passsing the WAVE Tool.</p>
+
+            <p>I also implemented the mobile versions of the website. Everything is usable on mobile device</p>
+        </div>
+
+        <div class="image-block" id="mobile-displays">
+            <img src="../images/dome-mob1.jpg" alt="">
+            <img src="../images/dome-mob2.jpg" alt="">
+            <img src="../images/dome-mob3.jpg" alt="">
+        </div>
+
+        <div class="text-block">
             <p>Made in collaboration with: </p>
             <ul>
-                <li>Isra Abbasi</li>
-                <li>Linghan Jing</li>
-                <li>Ryan Darmady</li>
-                <li>Eoin Walsh</li>
+                <li><span class="collaborator" onclick="window.open('https://www.linkedin.com/in/isra-abbasi5/', '_blank')">Isra Abbasi</span> - Project Manager, Visual Implementations, Research</li>
+                <li><span class="collaborator" onclick="window.open('https://www.linkedin.com/in/josslynjing/', '_blank')">Josslyn Jing</span> - Social Media Intergration, UI/UX, Wireframe designs, Art & logo designs</li>
+                <li><span class="collaborator" onclick="window.open('https://www.linkedin.com/in/eoinwalshtcd/', '_blank')">Eoin Walsh</span> - Research</li>
+                <li><span class="collaborator" onclick="window.open('https://www.linkedin.com/in/ryan-darmady-083449105/', '_blank')">Ryan Darmady</span> - UI/UX, Wireframe designs </li>
+                
             </ul>
         </div>
 
@@ -125,17 +144,7 @@
 
     </div>
 
-    <script>
-        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
+    <script src="../scripts/portfolio-script.js"></script>
 </body>
 
 </html>

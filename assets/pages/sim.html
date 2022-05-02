@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoeri PvdB - Viral Simulation</title>
+    <link rel="stylesheet" href="../css/content-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="nav-title"> 
+            <h2>Yoeri Pearcey van der Beek</h2>
+            <h4>software developer & programmer</h4>
+        </div>
+        
+        <h3 onclick="location.href='../pages/about.html'">About Me</h3>
+
+        <div class="burger-menu">
+            
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-3x"></i>
+            </a>
+            
+            <div id="myLinks">
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">About Me</a>
+                <a href="../pages/synchrush.html">SYNCH/RUSH</a>
+                <a href="../pages/dome.html">Dome of the Rock</a>
+                <a href="../pages/fons.html">FONS - Gardens</a>
+                <a href="../pages/cupric.html">Cupric</a>
+                <a href="../pages/ocdoom.html">OCDoom</a>
+                <a href="../pages/basejam.html">Base Jam</a>
+                <a href="../pages/sim.html">Virus Simulation</a>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="banner">
+        <img src="../images/sim1.jpg" alt="">
+    </div>
+
+    <div class="project-info">
+        <h1 class="page-title">Virus Simulation</h1>
+        <ul>
+            
+            <li>
+                <span>Resources:</span>
+                <ul>
+                    <li>Java</li>
+                    <li>Processing</li>
+                    <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/Viral_Simulation', '_blank')">Github</li>
+                </ul>
+            </li>
+            <li><span>Description:</span> Gamified Virus Simulation</li>
+            <li>
+                <span>Duration:</span> 3 days
+            </li>
+        </ul>
+
+        <button onclick="window.open('https://yoeri-pearcey-vdb.itch.io/virus-simulation', '_blank')">
+            Try It Out!
+        </button>
+        
+    </div>
+    <div class="container">
+
+        <div class="text-block">
+            <p>This is a gamified simulation of viral transmission made in Processing Java. The user can actiovate the virus on a location causing a shockwave. Nodes close to the center of the shockwave are more likely to be infected. Once infected nodes turn red and can transmit the virus to other nodes. The user can activate the virus 3 time per playthrough. The user can also choose on a spectrum between higher infection rates, and higher virus damage.</p>
+        </div>
+
+        <div class="image-block">
+            <img src="../images/sim2.jpg" alt="">
+
+        </div>
+
+        <div class="text-block">
+
+            <p>Each node has inherent stats including health, immunity, and chance to infect others. If infected, the nodes health decreases. If it reaches below 0, the node dies. However after a certain time, the node can recover from the infection and then carries immunity. The node also turns green. Immunity does not mean it cannot be infected, but the likehood is very slim, around a 5-10 percent chance. Once a node has recovered it also slowly regenerates its health over time.</p>
+        </div>
+
+        <div class="image-block">
+            <img src="../images/sim3.jpg" alt="">
+        </div>
+
+        <div class="text-block">
+            <p>The user can also start an "event". Doing so cause all nodes in the vicinity to crowd around the spot the user has clicked on. This will allow for more nodes to be infected due to the overcrowding. The user can do this 3 times per play through.</p>
+        </div>
+
+        <div class="image-block">
+            <img src="../images/sim4.jpg" alt="">
+        </div>
+
+        
+
+
+        <script src="../scripts/portfolio-script.js"></script>
+    </div>
+</body>
+
+</html>

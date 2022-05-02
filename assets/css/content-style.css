@@ -2,7 +2,7 @@ body {
     background-color:darkslategray;
 }
 
-p, h1, h2, h3, h4, h5, li, a {
+p, h1, h2, h3, h4, h5, li, a, button {
     color: antiquewhite;
     font-family: "Lucida Console", "Courier New", monospace;
 }
@@ -29,6 +29,10 @@ li > span {
 
 .navbar h3 {
     margin-top: 2%;
+    margin-left: auto;
+    margin-right: 2%;
+    cursor: pointer;
+
 }
 
 
@@ -66,6 +70,7 @@ li > span {
 #myLinks > a:hover {
     transition: 0.5s;
     background-color: grey;
+    color: black;
 }
 
 .burger-menu a {
@@ -94,14 +99,17 @@ li > span {
 }
 
 
-
+.page-title {
+    margin-top: 1%;
+}
 .banner {
     width:60vw;
-    height: 20vh;
+    height: 40vh;
     margin: auto;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     /* border-style: solid;
     border-color: grey; */
+    border-style: solid;
     box-shadow: 10px 10px grey;
 }
 
@@ -131,7 +139,7 @@ li > span {
 .project-info > button {
     width: 10%;
     height: 30px;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 45%;
     border-style: none;
     color: white;
@@ -180,9 +188,30 @@ li > span {
 .image-block  > img {
     width: 100%;
     height: 100%;
+    border-style: solid;
     box-shadow: 7px 7px grey;
 }
 
+#mobile-displays {
+    max-width: 100%;
+
+}
+
+#mobile-displays > img {
+    margin: 1%;
+    width: 20%;
+    height: 50%;
+}
+
+.collaborator {
+    color:cadetblue;
+    cursor: pointer;
+}
+
+.git-link {
+    color:cadetblue;
+    cursor: pointer;
+}
 
 @media screen {
     
