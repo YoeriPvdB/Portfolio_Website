@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoeri PvdB - Ghost of Redstone Manor</title>
+    <link rel="stylesheet" href="../css/content-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="nav-title"> 
+            <h2 id="myName">Yoeri Pearcey van der Beek</h2>
+            <h4 id="myTitle">The Ghost of Redstone Manor</h4>
+        </div>
+        
+        <h3 id="About" onclick="location.href='../pages/about.html'">Contact</h3>
+
+        <div class="burger-menu">
+            
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-3x"></i>
+            </a>
+            
+            <div id="myLinks">
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">Contact</a>
+                <a href="../pages/redstone.html">Ghost of Redstone Manor</a>
+                <a href="../pages/synchrush.html">SYNCH/RUSH</a>
+                <a href="../pages/dome.html">Dome of the Rock</a>
+                <a href="../pages/fons.html">FONS - Gardens</a>
+                <a href="../pages/cupric.html">Cupric</a>
+                <a href="../pages/ocdoom.html">OCDoom</a>
+                <a href="../pages/basejam.html">Base Jam</a>
+                <a href="../pages/sim.html">Virus Simulation</a>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="banner">
+        <img src="../images/redstone_banner.png" alt="">
+    </div>
+
+    <div class="project-info" style="margin-bottom: 2%;">
+        
+        <button onclick="window.open('https://yoeri-pearcey-vdb.itch.io/synchrush', '_blank')">
+            Try It Out!
+        </button>
+
+        <!-- <h1 class="page-title">The Ghost of Redstone Manor</h1> -->
+    </div>
+
+    <div class="mobile-info">
+        <i class="fa fa-info fa-2x"></i>
+        <div class="mobile-info-content">
+            <ul>
+                <li> <span> Description:</span> First Person Murder Mystery Game</li>
+                <li>
+                    <span>Duration:</span> 3 months
+                </li>
+                <li>
+                    <span> Resources:</span>
+                    <ul>
+                        <li>Unreal Engine</li>
+                        <li>Github</li>
+                        
+                    </ul>
+                </li>
+            </ul>
+    
+        </div>
+        
+    </div>
+
+    <div class="container">
+
+        <div class="text-block" style="margin-top: 0;">
+            <h1>About the game</h1>
+            <p>The Ghost of Redstone Manor is a first person murder mystery game where the player assumes the ghost form of the murdered writer Patricia Rotstein. The player makes use of multiple abilities to navigate the scene of the crime and attempt to solve the mystery. This project was conpleted over the course of 3 months as the final project of my Interactive Digital Media Masters in Trinity College Dublin. The game was built with a team of 4 using the Unreal Engine. I was the main programmer in the team. </p>
+
+            <h3>Resources</h3>
+                <ul>
+                    <li>Unreal Engine</li>
+                    <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/Ghost-of-Redstone-Manor', '_blank')">Github</li>
+                    
+                </ul>
+        </div>
+        <div class="image-block">
+            <img src="../images/ghost_possess.gif" alt="">
+
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+            <h1>My Work</h1>
+
+            <p>I implemented and programmed all gameplay elements in the Ghost of Redstone Manor. I also participated heavily in the designing of the various gameplay elements.</p>
+        </div>
+
+        
+
+        <div class="text-block" style="margin-top: 5%">
+
+            <h2>Player Mechanics</h2>
+
+            <p>Player movement and first person camera controls were provided by the Unreal Engine "First Person Starter" package. I built upon these core player controls. The player begins the game as ghost and can use various powers while in the forms. Players can then possess NPCs to take a physical form in the game. The player mechanics that I developed include: </p>
+            <ul>
+                <li>
+                    <span>Ghost form:</span>
+                    <ul>
+                        <li>Walking through walls</li>
+                        <li>Teleporting between house floors</li>
+                        <li>Picking up small objects and throwing them</li>
+                        <li>Possessing and controlling human NPCs</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span>Human form:</span>
+                    <ul>
+                        <li>Talking to other NPCs</li>
+                        <li>Collecting objects & clues</li>
+                        <li>Interacting with puzzles</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="image-block">
+            <img src="../images/redstone_puzzle.gif" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+            <h2>Dialogue</h2>
+
+            <p>A major feature in the Ghost of Redstone Manor is the ability to converse with NPCs while in human form. This enables players to gather clues, learn about the circumstances surrounding their character's life, and progress the storyline.</p>
+
+            <p>The dialogue system was the most intricate and involved aspect of my work load for the game. The key features and challenges for this system were:</p>
+
+            <ul>
+                <li>Creating a scalable dialogue system that is fast and easy to use for creating new dialogue scenarios.</li>
+                <li>Progressing conversations based on the player's dialogue choices.</li>
+                <li>Dynamically changing the conversation with an NPC depending on the character that the player is currently possessing.</li>
+                <li>Dynamically updating conversations depending on player progress through the game</li>
+                <li>Triggering events and reactions based on player actions in dialogue such as giving important quest items to specific characters.</li>
+            </ul>
+
+            <p>After testing different methods for this system, I settled on utilising Unreal's "Behaviour Tree" systems to build the dialogue. I created multiple customised Behaviour Tree function nodes to be used to create conversations. This is implemented together with a multitude of custom "decorator" nodes to check and alter the progress of the given dialogue tree based on factors such as who the player is possessing, what point of the game's progress the player is, and checking for scenario triggers.</p>
+
+
+        </div>
+
+        <div class="image-block">
+            <img src="../images/dialoguetree5.jpg" alt="">
+        </div>
+
+        <div class="image-block">
+            <img src="../images/matthewconvo.jpg" alt="">
+        </div>
+
+        <div class="image-block">
+            <img src="../images/dialoguefunctions.jpg" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block"> 
+            <h2>Inventory</h2>
+
+            <p>The player can find and collect quest objects that provide clues or enable the progress of the game. This is tracked using text references to track and assign key items. Items that are collected by the player can be viewed in an inventory menu that I developed and designed. Selecting an object in the menu will display the correscponding model and update the information container.</p>
+        </div>
+        
+        <div class="image-block">
+            <img src="../images/ghost_inventory1.gif" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+            <h2>Animations</h2>
+
+            <p>I implemented all the animations in the game. These include walking, talking, falling, and idle animations for NPCs. Furthermore, I implemented the first person perspective animations when possessing an NPC. This was accomplished with the animation blueprint system in Unreal Engine.</p>
+            
+        </div>
+
+        <div class="image-block">
+            <img src="../images/ghost_anim2.gif" alt="">
+        </div>
+
+        <div class="image-block">
+            <img src="../images/ghost_anim4.gif" alt="">
+        </div>
+
+        <div class="image-block">
+            <img src="../images/ghost_anim1.gif" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+            <h2>Environments & Effects</h2>
+
+            <p>I conceptualised and programmed the environmental effects which occur when the player is in ghost form, as well as the dynamic switching between the visuals.</p>
+
+            <p>The house that the game takes place in is built twice. Once with the normal effects, and another with the ghost visuals. These seperate instances are stored in "Layers" that are toggled on and off depending on the player's current form. NPCs and quest objects are treated seperately within their own blueprints to shuffle between their different visuals.</p>
+        </div>
+
+        <div class="image-block">
+            <img src="../images/ghostvisuals1.jpg" alt="">
+        </div>
+
+        <div class="image-block">
+            <img src="../images/humanvisuals1.jpg" alt="">
+        </div>
+
+        <div class="image-block">
+            <img src="../images/highlight.jpg" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+
+            <h2>AI Behaviour</h2>
+
+            <p>I programmed the behaviours of the various NPCs. I used a behaviour tree system to determine their state and actions then update them. These actions include walking back to their original position after being possessed, and playing character specific idle animations such as sitting down, drinking from a glass, or smoking.</p>
+
+        </div>
+
+        <div class="image-block">
+            <img src="../images/lindasmoke.jpg" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+            <p>Made in collaboration with: </p>
+            <ul>
+                <li><span class="collaborator" onclick="window.open('https://www.linkedin.com/in/josephyouorski/', '_blank')">Joe Yuorski</span> - Project Manager, Lead Writer, Audio, Event Coordinator</li>
+                <li><span class="collaborator" onclick="window.open('https://www.linkedin.com/in/changxin-xia/', '_blank')">Changxin Xia</span> - Lead 2D Artist, User Interface Design, Additional 3D modeling, Promotional Art Design</li>
+                <li><span class="collaborator" onclick="window.open('https://www.linkedin.com/in/daniel-moriarty-547381233/', '_blank')">Daniel Moriarty</span> - Lead 3D Artist, Environment Design & Layout, Lighting</li>
+            </ul>
+        </div>
+
+        
+
+
+        <script src="../scripts/portfolio-script.js"></script>
+    </div>
+
+    <div class="project-info">
+        <ul>
+            
+            <li>
+                Resources
+                <ul>
+                    <li>Unreal Engine</li>
+                    <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/Ghost-of-Redstone-Manor', '_blank')">Github</li>
+                    
+                </ul>
+            </li>
+            <li>Description: First Person Murder Mystery Game</li>
+            <li>
+                Duration: 3 months
+            </li>
+        </ul>
+
+        <button onclick="window.open('https://yoeri-pearcey-vdb.itch.io/synchrush', '_blank')">
+            Try It Out!
+        </button>
+        
+    </div>
+</body>
+
+</html>

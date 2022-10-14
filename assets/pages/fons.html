@@ -14,11 +14,11 @@
     <div class="navbar">
 
         <div class="nav-title"> 
-            <h2>Yoeri Pearcey van der Beek</h2>
-            <h4>software developer & programmer</h4>
+            <h2 id="myName">Yoeri Pearcey van der Beek</h2>
+            <h4 id="myTitle">FONS - Gardens</h4>
         </div>
         
-        <h3 onclick="location.href='../pages/about.html'">About Me</h3>
+        <h3 id="About" onclick="location.href='../pages/about.html'">Contact Me</h3>
 
         <div class="burger-menu">
             
@@ -28,7 +28,8 @@
             
             <div id="myLinks">
                 <a href="../../index.html">Home</a>
-                <a href="../pages/about.html">About Me</a>
+                <a href="../pages/about.html">Contact Me</a>
+                <a href="../pages/redstone.html">Ghost of Redstone Manor</a>
                 <a href="../pages/synchrush.html">SYNCH/RUSH</a>
                 <a href="../pages/dome.html">Dome of the Rock</a>
                 <a href="../pages/fons.html">FONS - Gardens</a>
@@ -45,40 +46,55 @@
         <img src="../images/fons-icon.jpg" alt="">
     </div>
 
-    <div class="project-info">
-        <h1 class="page-title">FONS - Gardens</h1>
-        <ul>
-            
-            <li>
-                <span>Resources</span> 
-                <ul>
-                    <li>Node.js</li>
-                    <li>Javascript</li>
-                    <li>MYSQL</li>
-                    <li>JQuery</li>
-                    <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/FONS', '_blank')">Github</li>
-                </ul>
-            </li>
-            <li><span>Description:</span> Garden themed image sharing website</li>
-            <li>
-                <span>Duration:</span> 3 weeks
-            </li>
-        </ul>
+    <div class="project-info"></div>
 
-        <!-- <button onclick="window.open('https://yoeri-pearcey-vdb.itch.io/synchrush', '_blank')">
-            Try It Out!
-        </button>
-         -->
+    <div class="mobile-info">
+        <i class="fa fa-info fa-2x"></i>
+        <div class="mobile-info-content">
+            <ul>
+                <li> <span> Description:</span> Garden themed image sharing website</li>
+                <li>
+                    <span>Duration:</span> 3 weeks
+                </li>
+                <li>
+                    <span> Resources:</span>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Javascript</li>
+                        <li>MYSQL</li>
+                        <li>JQuery</li>
+                        <li>Github</li>
+                    </ul>
+                </li>
+            </ul>
+    
+        </div>
+        
     </div>
+
+    
     <div class="container">
 
-        <div class="text-block">
-            <p>This project was developed during my Masters. We were tasked with creating a social media website, for which I chose the theme of gardens. Fons, by my understanding is Latin for "Spring". I chose this theme because my mother has put a lot of work into her garden, and I wanted to present it online. </p>
-        </div>
         <div class="image-block">
             <img src="../images/fons1.png" alt="">
 
         </div>
+
+        <div class="text-block">
+            <p>This project was developed during my Masters. We were tasked with creating a social media website, for which I chose the theme of gardens. Fons, by my understanding is Latin for "Spring". I chose this theme because my mother has put a lot of work into her garden, and I wanted to present it online. </p>
+
+            <h3> Resources:</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Javascript</li>
+                        <li>MYSQL</li>
+                        <li>JQuery</li>
+                        <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/FONS', '_blank')">Github</li>
+                    </ul>
+        </div>
+        
+
+        <div class="linebreak"></div>
 
         <div class="text-block">
 
@@ -99,6 +115,8 @@
             <img src="../images/fons2.png" alt="">
         </div>
 
+        <div class="linebreak"></div>
+
         <div class="text-block">
             <p>Users can create an account which then allows them to have their own profile page. From here they can upload posts, change their picture, or view their previous posts.</p>
             
@@ -108,6 +126,8 @@
             <img src="../images/fons4.png" alt="">
         </div>
 
+        <div class="linebreak"></div>
+
         <div class="text-block"> 
             <p>I created 4 database tables to organise the data. These are "users", "posts", "likes", "comments". The server probes these tables for information to update the website dynamically. The posts on the home page can be sorted between most recent or most liked. Furthermore, users are also listed on a seperate tab. Users may also comment on other posts and like them as well. Likes and comments are updated asynchrnously though JQuery Ajax functions. </p>
         </div>
@@ -116,7 +136,30 @@
             <img src="../images/fons3.png" alt="">
         </div>
 
-        
+        <div class="linebreak"></div>
+
+        <div class="project-info">
+            <!-- <h1 class="page-title">FONS - Gardens</h1> -->
+            <ul>
+                
+                <li>
+                    <span>Resources</span> 
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Javascript</li>
+                        <li>MYSQL</li>
+                        <li>JQuery</li>
+                        <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/FONS', '_blank')">Github</li>
+                    </ul>
+                </li>
+                <li><span>Description:</span> Garden themed image sharing website</li>
+                <li>
+                    <span>Duration:</span> 3 weeks
+                </li>
+            </ul>
+    
+            
+        </div>
 
 
         <script src="../scripts/portfolio-script.js"></script>

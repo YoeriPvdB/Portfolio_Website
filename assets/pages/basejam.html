@@ -14,11 +14,11 @@
     <div class="navbar">
 
         <div class="nav-title"> 
-            <h2>Yoeri Pearcey van der Beek</h2>
-            <h4>software developer & programmer</h4>
+            <h2 id="myName">Yoeri Pearcey van der Beek</h2>
+            <h4 id="myTitle">Base Jam</h4>
         </div>
         
-        <h3 onclick="location.href='../pages/about.html'">About Me</h3>
+        <h3 id="About" onclick="location.href='../pages/about.html'">Contact Me</h3>
 
         <div class="burger-menu">
             
@@ -28,7 +28,8 @@
             
             <div id="myLinks">
                 <a href="../../index.html">Home</a>
-                <a href="../pages/about.html">About Me</a>
+                <a href="../pages/about.html">Contact Me</a>
+                <a href="../pages/redstone.html">Ghost of Redstone Manor</a>
                 <a href="../pages/synchrush.html">SYNCH/RUSH</a>
                 <a href="../pages/dome.html">Dome of the Rock</a>
                 <a href="../pages/fons.html">FONS - Gardens</a>
@@ -46,7 +47,81 @@
     </div>
 
     <div class="project-info">
-        <h1 class="page-title">Base Jam</h1>
+        <button onclick="window.open('https://yoeri-pearcey-vdb.itch.io/base-jam', '_blank')">
+            Try It Out!
+        </button>
+    </div>
+
+    <div class="mobile-info">
+        <i class="fa fa-info fa-2x"></i>
+        <div class="mobile-info-content">
+            <ul>
+
+                <li> <span>Description:</span> Baseball Themed Space Invaders</li>
+                <li>
+                    <span>Duration:</span> 12 weeks
+                </li>
+                <li>
+                    <span>Resources</span>
+                    <ul>
+                        <li>Game Maker Studio</li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    
+    <div class="container">
+
+        <div class="text-block">
+            <p>Base Jam was my first game development project. In the first semester of my Bachelor's first year, we were put into teams of 2 to recreate an Atari classic. Our team was given Space Invaders.</p>
+            <h3>Resources</h3>
+            <ul>
+                <li>Game Maker Studio</li>
+            </ul>
+        </div>
+        <div class="image-block">
+            <img src="../images/basejam4.jpg" alt="">
+
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+
+            <p>Base Jam was a very ambitious project for a first timer. I was in charge of programming and design. I came up with the concept of batting back the projectiles from the aliens as I thought it would be more intense and fun to play. The player can dash from left to right, and swing their bat. After 150 points, the player becomes supercharged and their next hit will eliminate multiple aliens.</p>
+        </div>
+
+        <div class="image-block">
+            <img src="../images/basejam5.jpg" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+            <p> I programmed the player movement, the enemy movement, the controller functions, the win/loss conditions, and the highscore tables which compares all players stored on a local file.</p>
+        </div>
+
+        <div class="image-block">
+            <img src="../images/basejam3.jpg" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block"> 
+            <p>Art by <span class="collaborator" onclick="window.open('https://dazariath.itch.io/', '_blank')">Darragh Nolan</span> </p>
+        </div>
+        
+        <script src="../scripts/portfolio-script.js"></script>
+
+    </div>
+
+    <div class="project-info">
+        <!-- <h1 class="page-title">Base Jam</h1> -->
         <ul>
             
             <li>
@@ -65,40 +140,6 @@
             Try It Out!
         </button>
         
-    </div>
-    <div class="container">
-
-        <div class="text-block">
-            <p>Base Jam was my first game development project. In the first semester of my Bachelor's first year, we were put into teams of 2 to recreate an Atari classic. Our team was given Space Invaders.</p>
-        </div>
-        <div class="image-block">
-            <img src="../images/basejam4.jpg" alt="">
-
-        </div>
-
-        <div class="text-block">
-
-            <p>Base Jam was a very ambitious project for a first timer. I was in charge of programming and design. I came up with the concept of batting back the projectiles from the aliens as I thought it would be more intense and fun to play. The player can dash from left to right, and swing their bat. After 150 points, the player becomes supercharged and their next hit will eliminate multiple aliens.</p>
-        </div>
-
-        <div class="image-block">
-            <img src="../images/basejam5.jpg" alt="">
-        </div>
-
-        <div class="text-block">
-            <p> I programmed the player movement, the enemy movement, the controller functions, the win/loss conditions, and the highscore tables which compares all players stored on a local file.</p>
-        </div>
-
-        <div class="image-block">
-            <img src="../images/basejam3.jpg" alt="">
-        </div>
-
-        <div class="text-block"> 
-            <p>Art by <span class="collaborator" onclick="window.open('https://dazariath.itch.io/', '_blank')">Darragh Nolan</span> </p>
-        </div>
-        
-        <script src="../scripts/portfolio-script.js"></script>
-
     </div>
 </body>
 

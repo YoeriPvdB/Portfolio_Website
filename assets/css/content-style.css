@@ -16,13 +16,13 @@ li > span {
 }
 .navbar {
     position: sticky;
-    background-color: darkslategray;
+    background-color: darkslategrey;
     top: 0;
     width: 98vw;
     height: 10vh;
     display: flex;
     padding-top: 0.1%;
-    padding-bottom: 0.1%;
+    padding-bottom: 1%;
     margin-bottom: 5%;
     box-shadow: 0 2px grey;
 }
@@ -43,6 +43,18 @@ li > span {
     display: block;
     width: 30%;
 } 
+
+#myName {
+    text-shadow: 2px 2px black;
+}
+
+#myTitle {
+    text-decoration: underline double cadetblue 2px
+}
+
+#About:hover {
+    color: cadetblue;
+}
 
 .burger-menu {
     display: block;
@@ -100,7 +112,11 @@ li > span {
 
 
 .page-title {
+    margin: auto;
     margin-top: 1%;
+    text-shadow: 2px 2px black;
+    margin-top: 7%;
+    font-size: 50px;
 }
 .banner {
     width:60vw;
@@ -134,8 +150,6 @@ li > span {
 .project-info > ul > li {
     margin-right: 5%;
 }
-
-
 
 .project-info > button {
     width: 10%;
@@ -200,7 +214,7 @@ li > span {
 }
 
 #mobile-displays > img {
-    margin: 1%;
+    
     width: 20%;
     height: 50%;
 }
@@ -215,6 +229,182 @@ li > span {
     cursor: pointer;
 }
 
-@media screen {
+.linebreak {
+    z-index: -1;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50vw;
+    height: 0px;
+    border-top: solid;
+    border-color: grey;
+}
+
+.mobile-info {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0;
+        overflow-x: hidden;
+        scrollbar-width: none;
+    }
+
+    .navbar {
+       position: sticky;
+       margin-bottom: 0;
+        margin-left: -5%;
+        width: 105vw;
+        margin-top: -2vh;
+    }
+
+    .nav-title{
+       width: 70%;
+    }
+
+    .burger-menu {
+        z-index: 2;
+    }
+
+    #myName { 
+        margin-top: 8%;
+        font-size: 90%;
+        
+    }
+
+    #myTitle {
+        font-size: 75%;
+        margin-top: 2%;
+        /* margin-left: 5%; */
+       text-decoration: none;
+    }
+
+    #About {
+        display: none;
+    }
+
+    #myLinks {
+        margin-top: -20%;
+        right: 0;
+        width: 100vw;
+        left: -76vw;
+        border-left: none;
+        border-right: none;
+        z-index: 5;
+    }
+
+    .banner{
+        height: 20vh;
+        width: 105vw;
+        border: none;
+        border-top: grey solid;
+        border-bottom: grey solid;
+        margin: 0;
+        margin-top: 15%;
+        margin-left:-5%;
+        box-shadow: none;
+    }
+
+    .banner > img {
+        object-fit:fill;
+    }
+
     
+
+    .project-info > ul {
+        display: none;
+    }
+
+    .project-info > button {
+        margin-top: 10%;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 10%;
+    }
+
+    .container {
+        width: 90vw;
+        border: none;
+    }
+
+    .text-block {
+        margin: auto;
+        width: 90%;
+    }
+
+    .text-block > p {
+        margin: auto;
+        /* text-align: justify; */
+        font-size: 100%;
+        line-height: 1.6;
+    }
+
+    .text-block > ul > li > ul > li {
+        font-size: 90%;
+    }
+
+    .text-block > ul > li{
+        font-size: 95%;
+    }
+
+    .image-block {
+        max-width: 100%;
+        
+    }
+
+    .image-block > img {
+        box-shadow: none;
+    }
+
+    .linebreak {
+        width: 70vw;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .mobile-info {
+        color: white;
+        text-shadow: 2px 2px black;
+        display: inline-block;
+        position: fixed;
+        left: 90vw;
+        bottom: 3%;
+    }
+
+    .mobile-info:active > .mobile-info-content {
+        display: flex;
+        transition-duration: 0.8s;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.9);
+    }
+
+    .mobile-info-content {
+        display: none;
+        height: 100vh;
+        opacity: 0;
+        position: fixed;
+        left: 0vw;
+        top: 0;
+    }
+
+    .mobile-info-content > ul {
+        list-style: none;
+        margin: auto;
+    }
+
+    .mobile-info-content > ul > li {
+        margin-bottom: 5%;
+        font-size: 18px;
+    }
+
+    .mobile-info-content > ul > li > span {
+        font-size: 20px;
+        color: cadetblue;
+    }
+
+    
+
 }
