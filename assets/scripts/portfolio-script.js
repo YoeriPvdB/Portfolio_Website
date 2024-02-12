@@ -21,10 +21,11 @@ var statuses;
 function HomeSetup() {
 
     pieces = [
+        ["C#", "MySQL"],
         ["Unreal Engine"],
         ["C#", "Unity Engine"],
         ["HTML", "CSS", "Javascript"],
-        ["Node.js", "MYSQL", "CSS", "HTML", "Javascript"],
+        ["Node.js", "MySQL", "CSS", "HTML", "Javascript"],
         ["Java", "Processing"],
         ["C#", "Unity Engine"],
         ["C#", "Unity Engine"],

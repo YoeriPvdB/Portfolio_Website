@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoeri PvdB - C# Game Library</title>
+    <link rel="stylesheet" href="../css/content-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="nav-title"> 
+            <h2 id="myName">Yoeri Pearcey van der Beek</h2>
+            <h4 id="myTitle">C# Game Library</h4>
+        </div>
+        
+        <h3 id="About" onclick="location.href='../pages/about.html'">Contact</h3>
+
+        <div class="burger-menu">
+            
+            <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
+                <i class="fa fa-bars fa-3x"></i>
+            </a>
+            
+            <div id="myLinks">
+                <a href="../../index.html">Home</a>
+                <a href="../pages/about.html">Contact</a>
+                <a href="../pages/game_library.html">C# Game Library</a>
+                <a href="../pages/redstone.html">Ghost of Redstone Manor</a>
+                <a href="../pages/synchrush.html">SYNCH/RUSH</a>
+                <a href="../pages/dome.html">Dome of the Rock</a>
+                <a href="../pages/fons.html">FONS - Gardens</a>
+                <a href="../pages/cupric.html">Cupric</a>
+                <a href="../pages/ocdoom.html">OCDoom</a>
+                <a href="../pages/basejam.html">Base Jam</a>
+                <a href="../pages/sim.html">Virus Simulation</a>
+            </div>
+            
+            
+        </div>
+    </div>
+    <div class="banner">
+        <img src="../images/table1.jpg" alt="">
+    </div>
+
+    <div class="project-info" style="margin-bottom: 2%;">
+        
+        <button onclick="window.open('https://github.com/YoeriPvdB/Game_Library/releases/tag/v0.5', '_blank')">
+            Try It Out!
+        </button>
+
+        <!-- <h1 class="page-title">The Ghost of Redstone Manor</h1> -->
+    </div>
+
+    <div class="mobile-info">
+        <i class="fa fa-info fa-2x"></i>
+        <div class="mobile-info-content">
+            <ul>
+                <li> <span> Description:</span> Console terminal game archive library made in .Net </li>
+                <li>
+                    <span>Duration:</span> 1 week
+                </li>
+                <li>
+                    <span> Resources:</span>
+                    <ul>
+                        <li>C#</li>
+                        <li>.Net</li>
+                        <li>MySQL</li>
+                        <li>Github</li>
+                        
+                    </ul>
+                </li>
+            </ul>
+    
+        </div>
+        
+    </div>
+
+    <div class="container">
+
+        <div class="text-block" style="margin-top: 0;">
+            <h1>About the program</h1>
+            <p>This is a console terminal based application that allows the user to record the games they have played. The app is entirely terminal based and is navigated through prompts.  </p>
+
+            <h3>Resources</h3>
+                <ul>
+                    <li>C#</li>
+                    <li>.Net</li>
+                    <li>MySQL</li>
+                    <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/Game_Library/releases/tag/v0.5', '_blank')">Github</li>
+                    
+                </ul>
+        </div>
+        <div class="image-block">
+            <img src="../images/table1.jpg" alt="">
+
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+            <h1>Features</h1>
+
+            <p>Users can create an account to access their library. When adding a new game to the library, the user will be asked for the following :</p>
+            <ul>
+                <li>Name</li>
+                <li>Console</li>
+                <li>Year of release</li>
+                <li>Genre</li>
+                <li>Rating (out of 10)</li>
+                <li>Completed (yes or no)</li>
+                <li>Start Date</li>
+                <li>Finish Date</li>
+                <li>Time Played</li>
+                <li>Comment</li>
+            </ul>
+
+            <p>Once the user has filled in the details, the database will be updated with the new entry.</p>
+        </div>
+
+        
+
+        <div class="text-block" style="margin-top: 5%">
+
+            <h2>Visualising</h2>
+
+            <p>Users can view their library listing through console commands. The application uses the "ConsoleTables" package to display the results of the user's searches. </p>
+            
+        </div>
+
+        <div class="image-block">
+            <img src="../images/table2.jpg" alt="">
+        </div>
+
+        <div class="linebreak"></div>
+
+        <div class="text-block">
+            <h2>Connection & Databases</h2>
+
+            <p>This game library uses databases to hold user data, hosted on Railway. When opening the app, users can sign up, or log in. Passwords are hash encrypted and salted using the BCrypt .Net package.</p>
+
+        </div>
+
+       
+
+        <div class="linebreak"></div>
+
+        <div class="text-block"> 
+            <h2>Why I made this</h2>
+
+            <p>This applicaton combines two interests of mine : Archiving and Retro technology aesthetics. I wanted to create a program to track the games I own and have played, including information I find interesting such as when I played the games and for how long. I enjoy the simple interface of typing out the details and queries. I also thought this would combine well with my CRT desktop monitor.</p>
+        </div>
+
+
+        <script src="../scripts/portfolio-script.js"></script>
+    </div>
+
+    <div class="project-info">
+        <ul>
+            
+            <li>
+                Resources
+                <ul>
+                    <li>C#</li>
+                    <li>.Net</li>
+                    <li>MySQL</li>
+                    <li class="git-link" onclick="window.open('https://github.com/YoeriPvdB/Game_Library/releases/tag/v0.5', '_blank')">Github</li>
+                    
+                </ul>
+            </li>
+            <li>Description: Console terminal game archive library made in .Net</li>
+            <li>
+                Duration: 1 week
+            </li>
+        </ul>
+
+        <button onclick="window.open('https://github.com/YoeriPvdB/Game_Library/releases/tag/v0.5', '_blank')">
+            Try It Out!
+        </button>
+        
+    </div>
+</body>
+
+</html>
